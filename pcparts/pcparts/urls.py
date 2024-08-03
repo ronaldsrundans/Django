@@ -22,5 +22,7 @@ urlpatterns = [
     path('', include('hdds.urls')),
     path('', include('members.urls')),
     path('', include('tasks.urls')),
+    path('', include('cpus.urls')),
+    path('', include('syncfiles.urls')),
     path('admin/', admin.site.urls),
 ]
