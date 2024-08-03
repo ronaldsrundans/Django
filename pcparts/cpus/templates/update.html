@@ -1,0 +1,18 @@
+<h1>Update HDD</h1>
+
+<form action="updaterecord/{{ myhdd.id }}" method="post">
+{% csrf_token %}
+HDD Name:<br>
+<input name="first" value="{{ myhdd.hddname }}">
+<br><br>
+HDD status:<br>
+<input name="last" value="{{ myhdd.hddstatus }}">
+<br><br>
+HDD memory:<br>
+<input name="hddmemory" value="{{ myhdd.hddmemory }}">
+<br><br>
+HDD year:<br>
+<input name="hddyear" value="{{ myhdd.hddyear }}">
+<br><br>
+<input type="submit" value="Submit">
+</form>

@@ -1,0 +1,18 @@
+<h1>Tasks</h1>
+
+<table border="1">
+{% for x in mytasks %}
+<tr>
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+
+<td>{{ x.taskname }}</td>
+<td>{{ x.deadline }}</td>
+  <td><a href="delete/{{ x.id }}">delete</a></td>
+  </tr>
+
+{% endfor %}
+</table>
+
+<p>
+<a href="addtask/">Add task</a>
+</p>

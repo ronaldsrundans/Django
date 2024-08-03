@@ -1,0 +1,32 @@
+<h1>HDDs</h1>
+
+<table border="1">  
+<tr>
+   <th>ID</th>
+    <th>HDD name</th>
+    <th>Status</th>
+    <th>Memory(GB)</th>
+     <th>Year</th>
+     <th>Last changes</th>
+     <th>DELETE</th>
+  </tr>
+{% for x in myhdds %}
+
+<tr>
+
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+
+<td>{{ x.hddname }}</td>
+<td>{{ x.hddstatus }}</td>
+<td>{{ x.hddmemory }}</td>
+<td>{{ x.hddyear }}</td>
+<td>{{ x.hdddate }}</td>
+  <td><a href="delete/{{ x.id }}">delete</a></td>
+  </tr>
+
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add hdd</a>
+</p>

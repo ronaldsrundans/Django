@@ -1,0 +1,13 @@
+
+python3 manage.py runserver 0.0.0.0:8000
+python3 manage.py runserver
+python3 manage.py makemigrations tasks
+python3 manage.py migrate
+
+git push origin main
+git commit -a
+git commit -m "Added PCparts files"
+git status
+git add *
+git init
+

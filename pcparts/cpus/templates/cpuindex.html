@@ -1,0 +1,32 @@
+<h1>CPUs</h1>
+
+<table border="1">  
+<tr>
+   <th>ID</th>
+    <th>CPU name</th>
+    <th>Status</th>
+    <th>Memory(GB)</th>
+     <th>Year</th>
+     <th>Last changes</th>
+     <th>DELETE</th>
+  </tr>
+{% for x in mycpuss %}
+
+<tr>
+
+<td><a href="update/{{ x.id }}">{{ x.id }}</a></td>
+
+<td>{{ x.cpusname }}</td>
+<td>{{ x.cpusstatus }}</td>
+<td>{{ x.cpusmemory }}</td>
+<td>{{ x.cpusyear }}</td>
+<td>{{ x.cpusdate }}</td>
+  <td><a href="delete/{{ x.id }}">delete</a></td>
+  </tr>
+
+{% endfor %}
+</table>
+
+<p>
+<a href="add/">Add CPU</a>
+</p>

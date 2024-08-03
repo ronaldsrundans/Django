@@ -1,0 +1,18 @@
+<h1>Add HDD</h1>
+
+<form action="addrecord/" method="post">
+{% csrf_token %}
+HDD Name:<br>
+<input name="first">
+<br><br>
+HDD status:<br>
+<input name="last">
+<br><br>
+HDD memory(GB):<br>
+<input name="hddmemory">
+<br><br>
+HDD year:<br>
+<input name="hddyear">
+<br><br>
+<input type="submit" value="Submit">
+</form>
